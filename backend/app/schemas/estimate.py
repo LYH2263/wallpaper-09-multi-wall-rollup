@@ -6,3 +6,10 @@ class EstimateRequest(BaseModel):
     roll_id: int
     save: bool = False
     note: str = ""
+
+
+class OrderBatchRequest(BaseModel):
+    wall_ids: list[int]
+    roll_id: int
+    save: bool = False
+    note: str = ""
